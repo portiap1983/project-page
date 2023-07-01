@@ -43,20 +43,12 @@ p {
 }
 
 .primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
 .secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -93,7 +85,7 @@ p {
   color: white;
 }
 
-@media (max-width: 675px) {
+media (max-width: 675px) {
   h1 {
     font-size: 28px;
   }
@@ -108,5 +100,24 @@ p {
     font-size: 18px;
 
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .center-mobile {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .center-mobile {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .center-mobile {
+    display: flex;
+    justify-content: center;
   }
 }
